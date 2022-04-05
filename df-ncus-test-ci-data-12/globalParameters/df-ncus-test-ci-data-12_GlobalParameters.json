@@ -1,0 +1,10 @@
+{
+	"test": {
+		"type": "String",
+		"value": "abc"
+	},
+	"test2": {
+		"type": "Array",
+		"value": "[\"VALUE01\",\"VALUE02\",\"VALUE03\",\"VALUE04\"]"
+	}
+}
