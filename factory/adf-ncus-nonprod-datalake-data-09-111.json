@@ -1,0 +1,43 @@
+{
+	"name": "adf-ncus-nonprod-datalake-data-09-111",
+	"properties": {
+		"globalParameters": {
+			"test": {
+				"type": "String",
+				"value": "abc"
+			},
+			"test2": {
+				"type": "Array",
+				"value": [
+					"VALUE01",
+					"VALUE02",
+					"VALUE03",
+					"VALUE04"
+				]
+			}
+		},
+		"encryption": {
+			"vaultBaseUrl": "https://kv-ncus-nonprod-data-275.vault.azure.net/",
+			"keyName": "adf-ncus-nonprod-datalake-data-09-111-key",
+			"keyVersion": "d7a442904caa410284c61c4a3fc9cf4c"
+		}
+	},
+	"location": "northcentralus",
+	"identity": {
+		"type": "UserAssigned",
+		"userAssignedIdentities": {
+			"/subscriptions/1901eaa9-e98f-49b6-ac39-b1cd55defe19/resourcegroups/rg-ncus-nonprod-datalake-data-09-362/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-datafactory-additional-identity2": {
+				"clientId": "b2834ba2-e54f-4ca7-b3ec-823f52da3f51",
+				"principalId": "17d46659-f066-4c50-b520-13a8f77fadbf"
+			},
+			"/subscriptions/1901eaa9-e98f-49b6-ac39-b1cd55defe19/resourcegroups/rg-ncus-nonprod-datalake-data-09-362/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-datafactory-additional-identity1": {
+				"clientId": "49f91898-fb85-4cf1-9378-741daa65b5a3",
+				"principalId": "f7601c9c-132e-4778-b2d8-c979a587463c"
+			},
+			"/subscriptions/1901eaa9-e98f-49b6-ac39-b1cd55defe19/resourcegroups/rg-ncus-nonprod-datalake-data-09-362/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-adf-ncus-nonprod-datalake-data-09-111-identity": {
+				"clientId": "2265e8b4-56d3-4156-9eef-0d886493fdee",
+				"principalId": "fa4aab6f-9603-4361-a4d8-a892ff868520"
+			}
+		}
+	}
+}
